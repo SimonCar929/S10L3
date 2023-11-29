@@ -1,0 +1,10 @@
+Scopo di ogni istruzione in assembly:
+
+mov EAX, 0x20 -> copia il numero 32 nel registro EAX.
+mov EAX, 0x38 -> copia il numero 56 nel registro EDX.
+add EAX, EDX -> somma il valore presente nel registro EDX in quello nel registro EAX.
+mov EBP, EAX -> copia il contenuto del registro EAX in quello EBP
+cmp EBP, 0xa -> istruzione condizionale che controlla i valori di destinazione e sorgente. Poiché destinazione è maggiore della sorgente i flag ZF e CF saranno impostati a 0.
+jge 0x1176 <main+61> -> salto condizionale che avviene se la destinazione risulta maggiore della sorgente
+mov EAX, 0x0 -> copia il valore 0 nel registro EAX.
+call 0x1030 <prinft@plt> -> viene utilizzato per la funzione printf Di C. @plt fa riferimento a una struttura che rende il collegamento e caricamento delle librerie dinamiche.
